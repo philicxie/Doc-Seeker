@@ -15,7 +15,8 @@ $(document).ready(function(){
 					chrome.downloads.download({url: item}, function success(res){
 						console.log(res);
 					});
-				})
+				});
+                
 	        // tab做出响应，发来的response
 			});
 		});
