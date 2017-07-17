@@ -1,19 +1,28 @@
 
 html {
+    position: relative;
     background-color: #34495e;
+    width: 300px;
+    min-height:100px;
 }
 .ex-container {
-	width: 400px;
-	min-height: 100px;
-	max-height: 500px;
+    width: 300px;
     margin-bottom:10px;
-    background-color: #34495e;
-    position: relative;
+    position: absolute;
+    text-align:center;
+    padding-top: 10px;
 }
-.row {
-    margin: 0 !important;
-}
+
 .add {
 	text-align: center;
 	margin-top: 10px;
+}
+
+#keyword_input {
+    margin: 0 auto;
+}
+
+.content_line {
+    width: 240px;
+    margin: 0 auto;
 }
