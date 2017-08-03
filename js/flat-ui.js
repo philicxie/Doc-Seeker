@@ -6733,7 +6733,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
     this.$element.after(this.$container);
 
-    var inputWidth = (this.inputSize < 3 ? 3 : this.inputSize) + "em";
+    var inputWidth = (this.inputSize < 2 ? 2 : this.inputSize) + "em";
     this.$input.get(0).style.cssText = "width: " + inputWidth + " !important;";
     this.build(options);
   }
@@ -6747,6 +6747,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
      */
     add: function(item, dontPushVal) {
       var self = this;
+
 
       if (self.options.maxTags && self.itemsArray.length >= self.options.maxTags)
         return;
@@ -6810,15 +6811,17 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
       if (beforeItemAddEvent.cancel)
         return;
 
+      
       // register item in internal array and map
       self.itemsArray.push(item);
 
       // add a tag element
+      
       var $tag = $('<span class="tag ' + htmlEncode(tagClass) + '">' + htmlEncode(itemText) + '<span data-role="remove"></span></span>');
       $tag.data('item', item);
       self.findInputWrapper().before($tag);
       $tag.after(' ');
-
+      
       // add <option /> if item represents a value not present in one of the <select />'s options
       if (self.isSelect && !$('option[value="' + encodeURIComponent(itemValue) + '"]',self.$element)[0]) {
         var $option = $('<option selected>' + htmlEncode(itemText) + '</option>');

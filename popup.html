@@ -8,23 +8,33 @@
     <script src="jquery-3.2.1.slim.min.js"></script>
     <script src="main.js"></script>
     <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/flat-ui.min.js"></script>
+    <script src="js/flat-ui.js"></script>
 </head>
+<!-- <div class="cus-line cus-bottom-margin">
+            <input type="text" placeholder="..." class="form-control flat" value="haha"/>
+        </div> -->
 <body>
-    <div class="ex-container">
-        <div class="content_line">
-            <input type="text" placeholder="..." class="form-control flat" />
-        </div>
-        <div class="content_line">
-            <input class="btn btn-primary btn-sm" type="button" id="addbtn" value="download all"/>
-        </div>
-        <div class="content_line">
-            <div id="keyword_input" class="tagsinput-primary btn-sm">
-                <input id="keywords" name="tagsinput" class="tagsinput" data-role="tagsinput"/>
+     <div class="ex-container">
+        
+        <div class="cus-line cus-bottom-margin">
+            <div id="keyword_input" class="tagsinput-primary cus-btn">
+                <input id="keywords" name="tagsinput" class="tagsinput" data-role="tagsinput" placeholder="Input Keywords..."/>
             </div>
         </div>
-    </div>
+        <div class="cus-line cus-bottom-margin">
+            <input class="btn btn-primary btn-sm cus-btn" type="button" id="addbtn" value="download all"/>
+        </div>
+    </div> 
+
+    <div id="cross"></div>
 </body>
+
+<script>
+    $("#keyword_input").blur(function() {
+        console.log('get me');
+        $(this).attr('placeholder', '');
+    });
+</script>
 </html>    
 
 

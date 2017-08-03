@@ -2,11 +2,11 @@
 html {
     position: relative;
     background-color: #34495e;
-     width: 300px; 
+      width: 360px;  
     min-height:100px;
 }
 .ex-container {
-    width: 300px;
+    width: 360px;
     margin-bottom:10px;
     position: absolute;
     text-align:center;
@@ -22,7 +22,16 @@ html {
     margin: 0 auto;
 }
 
-.content_line {
-    width: 240px;
+.cus-line {
+    width: 300px;
     margin: 0 auto;
 }
+
+.cus-btn {
+    width: 300px !important;
+}
+
+.cus-bottom-margin {
+    margin-bottom: 10px;
+}
+
