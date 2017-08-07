@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     chrome.extension.onRequest.addListener(
         function(request, sender, sendResponse) {
-            if (request.hello == "ok"){  // 在得到request请求是ok的时候 做下面的操作
+            if (request.req == "getSearch"){  
                 console.log('get ok');
                 var resArr = [];
                 $("[href$='.pdf']").each(function(){

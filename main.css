@@ -31,6 +31,18 @@ html {
     width: 300px !important;
 }
 
+.cus-btn-sm {
+    width: 140px !important;
+}
+
+.cus-margin-right {
+    margin-right: 5px;
+}
+
+.cus-margin-left {
+    margin-left: 5px;
+}
+
 .cus-bottom-margin {
     margin-bottom: 10px;
 }
