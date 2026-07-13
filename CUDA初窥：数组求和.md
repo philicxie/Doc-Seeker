@@ -10,7 +10,9 @@ for (int i = 0; i < length; i++) {
     sum += arr[i];
 }
 ```
-工程的一大魅力也是折磨之处在于，简单的问题模型在规模的驱动下会带来意想不到的发展。可惜那时候我手里只有小锤子，也只把数组求和当作一个再简单不过甚至不需要用“解决”这个词对待的问题。直到接触了CUDA，我才重新发现这个问题的迷人之处。
+工程最迷人的地方，也恰恰是最折磨人的地方是：许多看似简单的问题模型，在规模的驱动下，都会呈现出无法预料的复杂度，最终走向意想不到的演化。只可惜那时我手里只有一把小锤子，于是把数组求和当成了一个简单到甚至谈不上需要谈及“解决”二字的小问题。直到接触CUDA，我才重新意识到，这个问题远比想象中更有趣，此便是我写下本文的发心所在。
+在CUDA的视角中，数组求和的第一个有趣之处在于，它其实并不是直觉上CUDA易于处理的那类问题。
+
 ## Text Formatting
 
 Markdown makes it easy to format text. You can write in **bold**, *italic*, or ~~strikethrough~~. Combine them for ***bold italic*** text. Use `inline code` for technical terms.
